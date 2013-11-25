@@ -1,0 +1,2 @@
+call bundle update
+pause
