@@ -1,1 +1,1 @@
-gem "sinatra"
+gem "sinatra", "> 0.1"
