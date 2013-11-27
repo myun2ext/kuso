@@ -20,6 +20,7 @@ module Kso
       private
 
       def find_of(name)
+        name = name.to_s
         name + ".html"
       end
     end

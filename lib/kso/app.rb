@@ -6,7 +6,7 @@ module Kso
     register Sinatra::Reloader
 
     get '/' do
-      render "index"
+      render :index
     end
   end
 end
