@@ -9,7 +9,7 @@ module Kso
       include MissingTemplate
 
       def render(name)
-        template = templates_at(name)
+        template = template_at(name)
         inject(template)
       end
 
@@ -27,9 +27,17 @@ module Kso
 
       def method_missing(method, *args)
         if exist_template?(method)
-          template_at(method)
+          render(method)
         else
           super
+        end
+      end
+
+      def missing_in_template(method, *args)
+        if exist_template?(method)
+          render(method)
+        else
+          raise #method_missing(method, *args)
         end
       end
     end

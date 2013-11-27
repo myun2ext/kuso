@@ -1,8 +1,8 @@
-require "kso/renderer/template_file_pool"
+require "kso/renderer/template_render"
 module Kso
   module Renderer
     def render(name)
-      template_render(name)
+      template_render.render(name)
     end
 
     def template_render
