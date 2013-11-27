@@ -17,6 +17,10 @@ module Kso
         load(name)
       end
 
+      def exist?(name)
+        File.exist?(find_of(name))
+      end
+
       private
 
       def find_of(name)
