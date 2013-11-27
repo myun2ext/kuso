@@ -1,10 +1,20 @@
 module Kso
   module Renderer
     class TemplateFilePool
-      @templates = {}
+      def initialize
+        @templates = {}
+      end
+
+      def read(name)
+        File.read(find_of(name))
+      end
 
       def load(name)
-        @templates[name] = File.read(find_of(name))
+        @templates[name] ||= read(name)
+      end
+
+      def at(name)
+        load(name)
       end
 
       private
