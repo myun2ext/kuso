@@ -6,7 +6,7 @@ module Kso
     include Injector
 
     def render(name)
-      templates.at(name)
+      template = templates.at(name)
     end
 
     def templates
