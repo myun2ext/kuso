@@ -1,0 +1,8 @@
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+  <title>#{title}</title>
+#{assets.stylesheets.each do |stylesheet|
+  puts "  <link href=\"#{stylesheet.path}\" media=\"all\" rel=\"stylesheet\" type=\"text/css\" />
+end}
+#{assets.javascripts.each do |javascript|
+  puts "<script src=\"#{javascript.path}\" type=\"text/javascript\"></script>
+end}
