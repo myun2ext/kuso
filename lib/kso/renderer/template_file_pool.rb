@@ -1,6 +1,6 @@
 module Kso
   module Renderer
-    class TemplateFiles
+    class TemplateFilePool
       @templates = {}
 
       def load(name)
