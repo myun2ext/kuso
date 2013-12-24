@@ -1,19 +1,19 @@
 # Xkatpalt
 
-**Xkatpalt** is Ruby/Sinatra Based Simple Web Application Framework.
+**Xkatpalt** is **Ruby/Sinatra** Based Web Application Framework of Verry Simple.
 
 ## How to Launch the your App ???
 
-for gem install then
+**First time**, you install gem of
 
 ```
 gem install xkatpalt
 ```
 
-or, if you used **bundler** then append your `Gemfile` to
+or if you used **bundler** then, append to your `Gemfile` for
 
 ```
-gem "xkatpalt"
+gem 'xkatpalt'
 ```
 
 and the write to your application code for example
@@ -36,9 +36,11 @@ and the HTML code
 </html>
 ```
 
-... only? Yes!!!
+... only that?
 
-You can launch the Application! Go Out!
+Yes!!!
+
+You can launch the Application! Let's Go the Way!
 
 ```
 ruby hello_world.rb
